@@ -1,0 +1,78 @@
+import java.util.*;
+
+class Main {
+    public static void main(String arg[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the Date");
+        int date = sc.nextInt();
+        System.out.println("Enter the Day");
+        String day=sc.next();
+        System.out.println("Enter n th Date");
+        int n=sc.nextInt();
+        int d=n-date;
+        int v=d%7;
+         int ch=0;
+        switch(day){
+            case "Sunday":
+                 ch=(v + 0) % 7;
+                break;
+                  case "Monday":
+                ch=(v + 0) % 7;
+                break;  
+                case "Tuesday":
+                 ch=(v + 0) % 7;
+                break;   
+                case "Wednesday":
+               ch=(v + 0) % 7;
+                break;  
+                case "Thursday":
+                 ch=(v+0)%7;
+                break; 
+                case "Friday":
+                ch=(v + 0) % 7;
+                break; 
+                case "Saturday":
+                 ch=(v + 0) % 7;
+                break;
+                default:
+                System.out.println("invalid");
+        }
+        
+        switch(ch){
+            case 0:
+                System.out.print(n+ "th Day is");
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.print(n+ "th Day is");
+                System.out.println("Monday");
+                break;  
+            case 2:
+                System.out.print(n+ "th Day is");
+                System.out.println("Tuesday");
+                break; 
+            case 3:
+                System.out.print(n+ "th Day is");
+                System.out.println("wednesday");
+                break; 
+            case 4:
+                System.out.print(n+ "th Day is");
+                System.out.println("thursday");
+                break;  
+            case 5:
+                System.out.print(n+ "th Day is");
+                System.out.println("Friday");
+                break; 
+            case 6:
+                   System.out.print(n+ "th Day is");
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("invalid");
+        
+        }
+        
+    }
+}
+
